@@ -27,14 +27,14 @@ const SearchResultContainer = () => {
   return (
     <div className="px-1 col-span-11 mt-20">
       <ButtonList />
-      <div className="flex flex-col px-3  items-center">
+      <div className="flex flex-col px-3  items-center ">
         <div className="p-2 m-2">
           {searchedVideos?.map((video) => (
             <Link
               key={video?.id?.videoId}
               to={"/watch?v=" + video?.id?.videoId}
             >
-              <div className="px-3 m-4 flex">
+              <div className="px-3 m-4 flex shadow-2xl">
                 <img
                   className="rounded-lg w-[400px] h-[210px] "
                   alt="thumbnail"
@@ -42,10 +42,10 @@ const SearchResultContainer = () => {
                 />
                 <ul className="flex flex-col justify-start ml-5 w-96">
                   <li className=" py-2 text-2xl ">{video?.snippet?.title}</li>
-                  <li className="text-gray-500 text-[18px]">
+                  <li className="text-black text-[18px]">
                     {video?.snippet?.channelTitle}
                   </li>
-                  <li className="text-gray-500 text-[18px]">
+                  <li className="text-black text-[18px]">
                     10k views{" "}
                     {(
                       Math.abs(
@@ -55,7 +55,7 @@ const SearchResultContainer = () => {
                     ).toFixed(1)}{" "}
                     days ago
                   </li>
-                  <li className="text-gray-500 mt-2 text-[15px]">
+                  <li className="text-black mt-2 text-[15px]">
                     {video?.snippet?.description}
                   </li>
                 </ul>
