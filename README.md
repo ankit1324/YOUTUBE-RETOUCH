@@ -4,6 +4,8 @@ This project is a YouTube clone built using React, Redux, and the YouTube API. I
 
 ![Youtube-Retouch](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTh4aHVuaHBqYWc4bnU2YnFwY3Z3MWQxaWh3MDlmeDJhN21yajlraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13Nc3xlO1kGg3S/giphy.gif)
 
+[Live Demo](https://youtube-retouch.vercel.app/)
+
 ## Features
 
 1. Video Playback
